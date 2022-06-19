@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     var sections = ["", "Playlist Name", "Playlist Name"]
     var tableView = UITableView()
@@ -24,8 +24,16 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView = UITableView(frame: .zero, style: .grouped)
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.separatorColor = UIColor.clear
         tableView.backgroundColor = UIColor(red: 0.11, green: 0.11, blue: 0.15, alpha: 1.00)
         tableView.register(AdTableViewCell.nib, forCellReuseIdentifier: AdTableViewCell.identifier)
+        tableView.register(PlayListWideTableViewCell.nib, forCellReuseIdentifier: PlayListWideTableViewCell.identifier)
+        tableView.register(PlayListTallTableViewCell.nib, forCellReuseIdentifier: PlayListTallTableViewCell.identifier)
+
+    }
+    
+    func setupCollectionView() {
+        
     }
     
     func setupNavigationBar() {

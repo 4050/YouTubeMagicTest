@@ -10,38 +10,49 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="224" id="KGk-i7-Jjw" customClass="AdTableViewCell" customModule="YouTubeMagicTest" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="224"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AdTableViewCell" rowHeight="224" id="KGk-i7-Jjw" customClass="AdTableViewCell" customModule="YouTubeMagicTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="224"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="224"/>
+                <rect key="frame" x="0.0" y="0.0" width="339" height="224"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="rRg-Gd-mde">
-                        <rect key="frame" x="129" y="188" width="116" height="26"/>
+                        <rect key="frame" x="129" y="188" width="80" height="26"/>
                     </pageControl>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="KSc-zx-IWT">
-                        <rect key="frame" x="18" y="0.0" width="339" height="180"/>
+                        <rect key="frame" x="0.0" y="0.0" width="339" height="180"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vCB-ZY-shq">
-                            <size key="itemSize" width="128" height="128"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="yBA-oy-bIj"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="vCB-ZY-shq">
+                            <size key="itemSize" width="339" height="180"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="H2p-sc-9uM" id="5iJ-gv-BTj"/>
+                            <outlet property="delegate" destination="H2p-sc-9uM" id="rr2-Qd-VJk"/>
+                        </connections>
                     </collectionView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="KSc-zx-IWT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="AmI-w8-Q1b"/>
+                    <constraint firstAttribute="trailing" secondItem="KSc-zx-IWT" secondAttribute="trailing" id="FXp-tm-a9U"/>
+                    <constraint firstItem="KSc-zx-IWT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="GdA-Z8-QTQ"/>
+                    <constraint firstItem="KSc-zx-IWT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VtX-JK-Shb"/>
+                    <constraint firstItem="rRg-Gd-mde" firstAttribute="top" secondItem="KSc-zx-IWT" secondAttribute="bottom" constant="8" symbolic="YES" id="axg-Z7-ZjR"/>
                     <constraint firstAttribute="bottom" secondItem="rRg-Gd-mde" secondAttribute="bottom" constant="10" id="ojS-1T-k9l"/>
-                    <constraint firstItem="KSc-zx-IWT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="pge-Iy-R8R"/>
                     <constraint firstItem="rRg-Gd-mde" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="129" id="sCx-00-gOC"/>
-                    <constraint firstItem="rRg-Gd-mde" firstAttribute="top" secondItem="KSc-zx-IWT" secondAttribute="bottom" constant="8" symbolic="YES" id="w3z-nh-9Tc"/>
-                    <constraint firstAttribute="trailing" secondItem="KSc-zx-IWT" secondAttribute="trailing" constant="18" id="yS8-9N-Adz"/>
                     <constraint firstAttribute="trailing" secondItem="rRg-Gd-mde" secondAttribute="trailing" constant="130" id="yy4-G6-yHY"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="collectionView" destination="KSc-zx-IWT" id="5hy-nr-bkh"/>
+            </connections>
             <point key="canvasLocation" x="405.07246376811599" y="159.375"/>
         </tableViewCell>
     </objects>

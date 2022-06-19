@@ -16,6 +16,13 @@
 		8515C965285A740800A5EAA4 /* YouTubeMagicTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8515C964285A740800A5EAA4 /* YouTubeMagicTestTests.swift */; };
 		8515C96F285A740800A5EAA4 /* YouTubeMagicTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8515C96E285A740800A5EAA4 /* YouTubeMagicTestUITests.swift */; };
 		8515C971285A740800A5EAA4 /* YouTubeMagicTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8515C970285A740800A5EAA4 /* YouTubeMagicTestUITestsLaunchTests.swift */; };
+		85199910285F915100E364E3 /* PlayListTallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8519990E285F915100E364E3 /* PlayListTallCollectionViewCell.swift */; };
+		85199911285F915100E364E3 /* PlayListTallCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8519990F285F915100E364E3 /* PlayListTallCollectionViewCell.xib */; };
+		85199914285F917600E364E3 /* PlayListTallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85199912285F917600E364E3 /* PlayListTallTableViewCell.swift */; };
+		85199915285F917600E364E3 /* PlayListTallTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85199913285F917600E364E3 /* PlayListTallTableViewCell.xib */; };
+		85199917285F920200E364E3 /* PlayListTallTableViewCell + UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85199916285F920200E364E3 /* PlayListTallTableViewCell + UICollectionViewCell.swift */; };
+		857C960A285E64BF00949549 /* AdTableViewCell + UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C9609285E64BF00949549 /* AdTableViewCell + UICollectionView.swift */; };
+		857C960C285E721A00949549 /* PlayListWideTableViewCell + UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C960B285E721A00949549 /* PlayListWideTableViewCell + UICollectionView.swift */; };
 		85E0F933285B906A00F16E11 /* MainViewController + UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E0F932285B906A00F16E11 /* MainViewController + UITableView.swift */; };
 		85E0F939285BA3AA00F16E11 /* AdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E0F937285BA3AA00F16E11 /* AdTableViewCell.swift */; };
 		85E0F93A285BA3AA00F16E11 /* AdTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85E0F938285BA3AA00F16E11 /* AdTableViewCell.xib */; };
@@ -58,6 +65,13 @@
 		8515C96A285A740800A5EAA4 /* YouTubeMagicTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTubeMagicTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8515C96E285A740800A5EAA4 /* YouTubeMagicTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeMagicTestUITests.swift; sourceTree = "<group>"; };
 		8515C970285A740800A5EAA4 /* YouTubeMagicTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeMagicTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8519990E285F915100E364E3 /* PlayListTallCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListTallCollectionViewCell.swift; sourceTree = "<group>"; };
+		8519990F285F915100E364E3 /* PlayListTallCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayListTallCollectionViewCell.xib; sourceTree = "<group>"; };
+		85199912285F917600E364E3 /* PlayListTallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListTallTableViewCell.swift; sourceTree = "<group>"; };
+		85199913285F917600E364E3 /* PlayListTallTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayListTallTableViewCell.xib; sourceTree = "<group>"; };
+		85199916285F920200E364E3 /* PlayListTallTableViewCell + UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayListTallTableViewCell + UICollectionViewCell.swift"; sourceTree = "<group>"; };
+		857C9609285E64BF00949549 /* AdTableViewCell + UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AdTableViewCell + UICollectionView.swift"; sourceTree = "<group>"; };
+		857C960B285E721A00949549 /* PlayListWideTableViewCell + UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayListWideTableViewCell + UICollectionView.swift"; sourceTree = "<group>"; };
 		85E0F932285B906A00F16E11 /* MainViewController + UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController + UITableView.swift"; sourceTree = "<group>"; };
 		85E0F937285BA3AA00F16E11 /* AdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdTableViewCell.swift; sourceTree = "<group>"; };
 		85E0F938285BA3AA00F16E11 /* AdTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdTableViewCell.xib; sourceTree = "<group>"; };
@@ -150,6 +164,7 @@
 		8515C94C285A740600A5EAA4 /* YouTubeMagicTest */ = {
 			isa = PBXGroup;
 			children = (
+				85199918285FA46F00E364E3 /* Service */,
 				8504F785285B878B00ECB602 /* Model */,
 				8504F786285B879E00ECB602 /* ViewModel */,
 				8504F787285B87A600ECB602 /* View */,
@@ -180,6 +195,41 @@
 			path = YouTubeMagicTestUITests;
 			sourceTree = "<group>";
 		};
+		8519990B285F888100E364E3 /* PlayListTallViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8519990C285F889100E364E3 /* PlayListTallCollectionViewCell */,
+				8519990D285F88B200E364E3 /* PlayListTallTableViewCell */,
+			);
+			path = PlayListTallViewCell;
+			sourceTree = "<group>";
+		};
+		8519990C285F889100E364E3 /* PlayListTallCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8519990E285F915100E364E3 /* PlayListTallCollectionViewCell.swift */,
+				8519990F285F915100E364E3 /* PlayListTallCollectionViewCell.xib */,
+			);
+			path = PlayListTallCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		8519990D285F88B200E364E3 /* PlayListTallTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				85199912285F917600E364E3 /* PlayListTallTableViewCell.swift */,
+				85199916285F920200E364E3 /* PlayListTallTableViewCell + UICollectionViewCell.swift */,
+				85199913285F917600E364E3 /* PlayListTallTableViewCell.xib */,
+			);
+			path = PlayListTallTableViewCell;
+			sourceTree = "<group>";
+		};
+		85199918285FA46F00E364E3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		85E0F930285B903D00F16E11 /* VideoPlayerViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +240,7 @@
 		85E0F934285B918000F16E11 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				8519990B285F888100E364E3 /* PlayListTallViewCell */,
 				85EA0DC1285CE7B500E8725F /* PlayListWideViewCell */,
 				85EA0DBC285CE50100E8725F /* AdViewCell */,
 			);
@@ -200,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				85E0F937285BA3AA00F16E11 /* AdTableViewCell.swift */,
+				857C9609285E64BF00949549 /* AdTableViewCell + UICollectionView.swift */,
 				85E0F938285BA3AA00F16E11 /* AdTableViewCell.xib */,
 			);
 			path = AdTableViewCell;
@@ -236,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				85EA0DC2285CE8FE00E8725F /* PlayListWideTableViewCell.swift */,
+				857C960B285E721A00949549 /* PlayListWideTableViewCell + UICollectionView.swift */,
 				85EA0DC3285CE8FE00E8725F /* PlayListWideTableViewCell.xib */,
 			);
 			path = PlayListWideTableViewCell;
@@ -359,7 +412,9 @@
 				8515C95A285A740700A5EAA4 /* LaunchScreen.storyboard in Resources */,
 				85EA0DCB285CF50600E8725F /* PlayListWideCollectionViewCell.xib in Resources */,
 				8515C957285A740700A5EAA4 /* Assets.xcassets in Resources */,
+				85199911285F915100E364E3 /* PlayListTallCollectionViewCell.xib in Resources */,
 				85EA0DC5285CE8FE00E8725F /* PlayListWideTableViewCell.xib in Resources */,
+				85199915285F917600E364E3 /* PlayListTallTableViewCell.xib in Resources */,
 				8515C955285A740600A5EAA4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,13 +441,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				85EA0DC4285CE8FE00E8725F /* PlayListWideTableViewCell.swift in Sources */,
+				85199910285F915100E364E3 /* PlayListTallCollectionViewCell.swift in Sources */,
+				85199914285F917600E364E3 /* PlayListTallTableViewCell.swift in Sources */,
 				85EA0DCA285CF50600E8725F /* PlayListWideCollectionViewCell.swift in Sources */,
 				8515C952285A740600A5EAA4 /* MainViewController.swift in Sources */,
 				85E0F933285B906A00F16E11 /* MainViewController + UITableView.swift in Sources */,
 				8515C94E285A740600A5EAA4 /* AppDelegate.swift in Sources */,
+				85199917285F920200E364E3 /* PlayListTallTableViewCell + UICollectionViewCell.swift in Sources */,
 				85EA0DBF285CE53700E8725F /* AdCollectionViewCell.swift in Sources */,
 				8515C950285A740600A5EAA4 /* SceneDelegate.swift in Sources */,
 				85E0F939285BA3AA00F16E11 /* AdTableViewCell.swift in Sources */,
+				857C960C285E721A00949549 /* PlayListWideTableViewCell + UICollectionView.swift in Sources */,
+				857C960A285E64BF00949549 /* AdTableViewCell + UICollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

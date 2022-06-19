@@ -1,17 +1,17 @@
 //
-//  AdCollectionViewCell.swift
+//  PlayListTallCollectionViewCell.swift
 //  YouTubeMagicTest
 //
-//  Created by Станислав on 17.06.2022.
+//  Created by Станислав on 19.06.2022.
 //
 
 import UIKit
 
-class AdCollectionViewCell: UICollectionViewCell {
-    
+class PlayListTallCollectionViewCell: UICollectionViewCell {
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        backgroundColor = UIColor(red: 0.11, green: 0.11, blue: 0.15, alpha: 1.00)
+        // Initialization code
     }
     
     class var identifier: String {
@@ -21,5 +21,5 @@ class AdCollectionViewCell: UICollectionViewCell {
     class var nib: UINib {
         return UINib(nibName: identifier, bundle: nil)
     }
-    
+
 }

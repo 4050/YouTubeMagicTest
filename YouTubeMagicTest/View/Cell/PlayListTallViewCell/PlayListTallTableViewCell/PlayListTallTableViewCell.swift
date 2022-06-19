@@ -1,14 +1,15 @@
 //
-//  PlayListWideTableViewCell.swift
+//  PlayListTallTableViewCell.swift
 //  YouTubeMagicTest
 //
-//  Created by Станислав on 17.06.2022.
+//  Created by Станислав on 19.06.2022.
 //
 
 import UIKit
 
-class PlayListWideTableViewCell: UITableViewCell, UICollectionViewDelegate , UICollectionViewDataSource{
-
+class PlayListTallTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+  
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func awakeFromNib() {
@@ -17,7 +18,7 @@ class PlayListWideTableViewCell: UITableViewCell, UICollectionViewDelegate , UIC
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.backgroundColor = .none
-        collectionView.register(PlayListWideCollectionViewCell.nib, forCellWithReuseIdentifier: PlayListWideCollectionViewCell.identifier)
+        collectionView.register(PlayListTallCollectionViewCell.nib, forCellWithReuseIdentifier: PlayListTallCollectionViewCell.identifier)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -33,4 +34,5 @@ class PlayListWideTableViewCell: UITableViewCell, UICollectionViewDelegate , UIC
     class var nib: UINib {
         return UINib(nibName: identifier, bundle: nil)
     }
+    
 }

@@ -7,11 +7,18 @@
 
 import UIKit
 
-class AdTableViewCell: UITableViewCell {
+class AdTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         backgroundColor = UIColor(red: 0.11, green: 0.11, blue: 0.15, alpha: 1.00)
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.backgroundColor = .none
+        collectionView.register(AdCollectionViewCell.nib, forCellWithReuseIdentifier: AdCollectionViewCell.identifier)
+    
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

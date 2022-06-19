@@ -4,31 +4,37 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PlayListWideCollectionViewCell" customModule="YouTubeMagicTest" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="160" height="115"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlayListWideCollectionViewCell" id="gTV-IL-0wX" customClass="PlayListWideCollectionViewCell" customModule="YouTubeMagicTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="118"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="160" height="115"/>
+                <rect key="frame" x="0.0" y="0.0" width="160" height="118"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fbs-s0-ce5">
                         <rect key="frame" x="0.0" y="0.0" width="160" height="70"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="Q71-Sd-qEh"/>
+                            <constraint firstAttribute="width" constant="160" id="fju-y2-28i"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nV-Y4-LTu">
-                        <rect key="frame" x="0.0" y="94" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSo-gK-EOD">
+                        <rect key="frame" x="0.0" y="74" width="41.5" height="24"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSo-gK-EOD">
-                        <rect key="frame" x="0.0" y="74" width="41.5" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nV-Y4-LTu">
+                        <rect key="frame" x="0.0" y="91" width="35.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -36,8 +42,8 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstItem="fbs-s0-ce5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5PU-9i-TYh"/>
-                <constraint firstAttribute="bottom" secondItem="0nV-Y4-LTu" secondAttribute="bottom" id="Nee-rH-ydm"/>
-                <constraint firstItem="0nV-Y4-LTu" firstAttribute="top" secondItem="LSo-gK-EOD" secondAttribute="bottom" constant="-1" id="OrM-yS-LRB"/>
+                <constraint firstAttribute="bottom" secondItem="0nV-Y4-LTu" secondAttribute="bottom" constant="6" id="Nee-rH-ydm"/>
+                <constraint firstItem="0nV-Y4-LTu" firstAttribute="top" secondItem="LSo-gK-EOD" secondAttribute="bottom" constant="-7" id="OrM-yS-LRB"/>
                 <constraint firstItem="fbs-s0-ce5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="b1X-Rm-OVQ"/>
                 <constraint firstAttribute="trailing" secondItem="fbs-s0-ce5" secondAttribute="trailing" id="bK4-dQ-rlx"/>
                 <constraint firstItem="LSo-gK-EOD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dyP-vE-sXJ"/>
@@ -54,4 +60,9 @@
             <point key="canvasLocation" x="217.39130434782609" y="121.54017857142857"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

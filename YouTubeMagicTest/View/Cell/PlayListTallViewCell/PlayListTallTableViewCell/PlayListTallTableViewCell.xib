@@ -9,21 +9,21 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlayListWideTableViewCell" rowHeight="125" id="KGk-i7-Jjw" customClass="PlayListWideTableViewCell" customModule="YouTubeMagicTest" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="118"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlayListTallTableViewCell" id="KGk-i7-Jjw" customClass="PlayListTallTableViewCell" customModule="YouTubeMagicTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="185"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="118"/>
+                <rect key="frame" x="0.0" y="0.0" width="135" height="185"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="V1g-kz-7Sk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Z2u-JY-mHd">
+                        <rect key="frame" x="0.0" y="0.0" width="135" height="185"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="125" id="h3x-sm-6G5"/>
-                            <constraint firstAttribute="width" constant="320" id="pyv-vO-qO6"/>
+                            <constraint firstAttribute="width" constant="135" id="2MS-bM-1QO"/>
+                            <constraint firstAttribute="height" constant="185" id="rD6-hj-8b8"/>
                         </constraints>
-                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wFC-Um-ZLv">
-                            <size key="itemSize" width="160" height="125"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FPA-re-rE9">
+                            <size key="itemSize" width="135" height="185"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="18" minY="0.0" maxX="18" maxY="0.0"/>
@@ -31,17 +31,17 @@
                     </collectionView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="V1g-kz-7Sk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QZi-5V-fJf"/>
-                    <constraint firstAttribute="bottom" secondItem="V1g-kz-7Sk" secondAttribute="bottom" constant="-7" id="bvl-Oc-GBG"/>
-                    <constraint firstItem="V1g-kz-7Sk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kRm-OA-4qe"/>
-                    <constraint firstAttribute="trailing" secondItem="V1g-kz-7Sk" secondAttribute="trailing" id="rZL-rL-3WA"/>
+                    <constraint firstItem="Z2u-JY-mHd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fuo-Ah-F7z"/>
+                    <constraint firstItem="Z2u-JY-mHd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ikX-Fs-UGa"/>
+                    <constraint firstAttribute="bottom" secondItem="Z2u-JY-mHd" secondAttribute="bottom" id="j9o-rX-SgA"/>
+                    <constraint firstAttribute="trailing" secondItem="Z2u-JY-mHd" secondAttribute="trailing" id="nsL-4c-ZAZ"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="collectionView" destination="V1g-kz-7Sk" id="rip-uG-2dY"/>
+                <outlet property="collectionView" destination="Z2u-JY-mHd" id="3Vx-Q2-5sJ"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="119.86607142857142"/>
+            <point key="canvasLocation" x="139" y="74"/>
         </tableViewCell>
     </objects>
 </document>
